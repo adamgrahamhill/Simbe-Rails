@@ -19,7 +19,13 @@ class ImagesController < ApplicationController
 		end
 	end
 
+	def destroy
+		@image.destroy
+		redirect_to images_path 
+	end
+
 	private
+
 	def image_params
 		params.require(:image).permit(:name, :screen_cap)
 	end

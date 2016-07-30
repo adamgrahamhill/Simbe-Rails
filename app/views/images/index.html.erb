@@ -1,2 +1,8 @@
 index.html.erb
 
+<% @images.each do |image| %>
+	<ul>
+	<li><%= image.name %></li>
+	<li><%= image_tag image.screen_cap.url %></li>
+	</ul>
+<%end%>
