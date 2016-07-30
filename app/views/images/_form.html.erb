@@ -1,0 +1,18 @@
+<%= form_for @image, url: images_path, html: { multipart: false } do |form| %>
+<div class="field">
+	<%= form.label :name %>
+	<%= form.text_field :name %>
+</div>
+<div class="field">
+	<%= form.label :screen_cap %>
+	<%= form.file_field :screen_cap %>
+</div>
+<div>
+	<%= form.submit %>
+</div>
+
+
+
+  
+
+<% end %>
