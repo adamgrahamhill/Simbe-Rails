@@ -1,5 +1,6 @@
 class ImagesController < ApplicationController
 	before_action :set_image, only: [:show, :update, :edit, :destroy]
+	before_filter :authorize
 	
 	def index
 		@images = Image.all

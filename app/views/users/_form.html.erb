@@ -11,9 +11,13 @@ _form.html.erb
 </div>
 <div class="field">
 	<p><%= form.label :password %></p>
-	<p><%= form.text_field :password %></p>
+	<p><%= form.password_field :password %></p>
+</div><div class="field">
+	<p><%= form.label :password_confirmation %></p>
+	<p><%= form.password_field :password_confirmation %></p>
 </div>
 <div>
 	<p><%= form.submit %></p>
 </div>
 <% end %>
+
