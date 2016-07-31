@@ -4,7 +4,6 @@ class ImagesController < ApplicationController
 	def index
 		@images = Image.all
 	end
-
 	def new
 		@image = Image.new
 	end
@@ -18,14 +17,15 @@ class ImagesController < ApplicationController
 			render :new
 		end
 	end
-
+	def update
+	end
 	def destroy
+		@image = Image.find(params[:id])
 		@image.destroy
-		redirect_to images_path 
+		redirect_to images_path
 	end
 
 	private
-
 	def image_params
 		params.require(:image).permit(:name, :screen_cap)
 	end
