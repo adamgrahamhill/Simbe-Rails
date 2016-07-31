@@ -1,6 +1,6 @@
 
 <%= link_to 'Admin Index', '/admin' %>
-
+<%= link_to 'Create User', new_user_path %>
 <% @users.each do |user| %>
 <ul>
 	<li><%= user.name %></li>
