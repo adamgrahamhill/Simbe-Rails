@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
-  def authorize
-  	redirect_to '/login' unless current_user
+  def authorize  #currently only used to authorize admin accounts
+  	redirect_to '/login' unless current_user && current_user.admin
   end
-  
+
 end
