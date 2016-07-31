@@ -1,0 +1,19 @@
+_form.html.erb
+
+<%= form_for @user do |form| %>
+<div class="field">
+	<p><%= form.label :name %></p>
+	<p><%= form.text_field :name %></p>
+</div>
+<div class="field">
+	<p><%= form.label :email %></p>
+	<p><%= form.text_field :email %></p>
+</div>
+<div class="field">
+	<p><%= form.label :password %></p>
+	<p><%= form.text_field :password %></p>
+</div>
+<div>
+	<p><%= form.submit %></p>
+</div>
+<% end %>
