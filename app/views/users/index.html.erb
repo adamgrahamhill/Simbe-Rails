@@ -1,3 +1,4 @@
+<p><%= link_to 'Home Page', root_path %></p>
 
 <%= link_to 'Admin Index', '/admin' %>
 <%= link_to 'Create User', new_user_path %>
@@ -5,7 +6,8 @@
 <ul>
 	<li><%= user.name %></li>
 	<li><%= user.email %></li>
-	<li>Admin: <%= !user.admin.nil? %></li>
+	<li>Admin: <%= user.admin? %></li>
 	<li><%= link_to 'Show', user %></li>
 </ul>
 <% end %>
+<p><%= link_to 'Home Page', root_path %></p>

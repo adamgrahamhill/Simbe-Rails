@@ -5,5 +5,8 @@ index.html.erb
 <p><% @posts.each do |post| %></p>
 <p><%= post.title %></p>
 <p><%= post.date %></p>
+<p><%= post.selected? %></p>
 <%= link_to 'show', post %>
 <% end %>
+
+<p><%= link_to 'Home Page', root_path %></p>

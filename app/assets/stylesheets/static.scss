@@ -51,6 +51,10 @@
   font-size: 260%;
   margin-bottom: 1rem;
 }
+
+#top-outer h1:first-of-type {
+  text-align: center;
+}
 #simbe-logo img {
   max-width: 2em;
   max-height: 2em;
@@ -63,6 +67,14 @@
   border-bottom-left-radius: 5px;
   font-weight: bolder;
   color: white;
+}
+#nav-button-1 a {
+  text-decoration: none;
+  color:white;
+}
+#nav-button-2 a {
+  text-decoration: none;
+  color:white;
 }
 #nav-button-2 {
   background-color: #ED6348;
@@ -85,7 +97,8 @@
   align-items: center;
 }
 #macbook {
-  max-width: 80%;
+  max-width: 750px;
+  max-height: auto;
   position: relative;
   bottom: -6em;
   margin: -5em 0em;

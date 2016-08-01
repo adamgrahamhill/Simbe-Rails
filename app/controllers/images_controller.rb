@@ -5,6 +5,7 @@ class ImagesController < ApplicationController
 	def index
 		@images = Image.all
 	end
+
 	def new
 		@image = Image.new
 	end
@@ -18,6 +19,10 @@ class ImagesController < ApplicationController
 			render :new
 		end
 	end
+
+	def edit
+	end
+
 	def update
 		if @image.update(image_params)
 			redirect_to @image, notice: 'Update successful'
@@ -25,6 +30,7 @@ class ImagesController < ApplicationController
 			render :edit
 		end
 	end
+
 	def destroy
 		@image = Image.find(params[:id])
 		@image.destroy
@@ -32,9 +38,11 @@ class ImagesController < ApplicationController
 	end
 
 	private
+
 	def image_params
-		params.require(:image).permit(:name, :screen_cap)
+		params.require(:image).permit(:name, :screen_cap, :selected)
 	end
+	
 	def set_image
 		@image = Image.find(params[:id])
 	end

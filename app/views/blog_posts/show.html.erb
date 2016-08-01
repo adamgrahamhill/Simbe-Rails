@@ -4,6 +4,6 @@ show.html.erb
 	<li><%= @post.title %></li>
 	<li><%= @post.content %></li>
 	<li><%= @post.date %></li>
-	<li><%= !@post.selected.nil? %></li>
+	<li><%= @post.selected? %></li>
 	<li><%= link_to 'Edit', edit_blog_post_path(@post) %></li>
 </ul>

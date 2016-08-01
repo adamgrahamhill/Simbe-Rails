@@ -6,12 +6,14 @@ index.html.erb
 <p><%= headline.text %></p>
 <p><%= headline.created_at %></p>
 <p>selected:
-<%= link_to "#{!headline.selected.nil?}", edit_headline_path(headline) %>
+<%= link_to "#{headline.selected?}", edit_headline_path(headline) %>
 </p>
 <p><%= link_to 'Show', headline %></p>
+<p><%= link_to 'Edit', edit_headline_path(headline) %></p>
 <p><%= link_to 'Destroy', headline, method: :delete, data: {confirm: 'Delete for realz?'} %></p>
 <p><%= "-" * 50 %></p>
 
 <% end %>
+<p><%= link_to 'Home Page', root_path %></p>
 
 <%#= button_to headline ,'headlines#select' %>

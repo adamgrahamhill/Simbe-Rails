@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link href="style_simbe.css" rel="stylesheet" type="text/css" />
-  <title>Definitely The Real Simbe</title>
-</head>
-<body>
+
 
   <nav id="top-nav">
     <div id="simbe-logo">
@@ -19,8 +12,8 @@
       <li><button>About</button></li>
       <li><button>Contact</button></li>
     </ul>
-    <button id="nav-button-1" type="button">Sign Up</button>
-    <button id="nav-button-2" type="button">Login</button>
+    <button id="nav-button-1" type="button"><%= link_to 'Sign Up', '/users/new'%></button>
+    <button id="nav-button-2" type="button"><%= link_to 'Login', '/login' %></button>
   </nav>
 
   <div class="greypart">
@@ -37,7 +30,8 @@
             <button id="tour" type="button">Product Tour</buttton>
             </div>
           </div>
-          <img id="macbook" src="http://www.davidlai.me/wp-content/uploads/2011/09/6a01310fb8e76f970c01310fbda40f970c.png" alt="Laptop"/>
+         <!--  <img id="macbook" src="http://www.davidlai.me/wp-content/uploads/2011/09/6a01310fb8e76f970c01310fbda40f970c.png" alt="Laptop"/> -->
+         <%= image_tag (@selected_image), id: "macbook" %>
         </div>
 
         <div class="mid-outer">
@@ -75,16 +69,22 @@
               <div>
                 <h3>Recent Blog Posts</h3>
                 <p>
-                  Definitely a real Blog Post<br>
-                  Nov 19 1985
+                <%= @post_one.title %> <br>
+                <%= @post_one.date %>
+                  <!-- Definitely a real Blog Post<br>
+                  Nov 19 1985 -->
                 </p>
                 <p>
-                  This one is real also<br>
-                  June 15th 2020
+                <%= @post_two.title %> <br>
+                <%= @post_two.date %>
+                  <!-- This one is real also<br>
+                  June 15th 2020 -->
                 </p>
                 <p>
-                  This one is questionable<br>
-                  May 32 1602
+                <%= @post_three.title %> <br>
+                <%= @post_three.date %>
+                <!--   This one is questionable<br>
+                  May 32 1602 -->
                 </p>
               </div>
               <a href="#">Follow the Simbe Blog</a>
@@ -157,5 +157,4 @@
             </div>
             <p>All rights reserved 2012 SIMBE</p>
           </footer>
-        </body>
-        </html>
+    

@@ -1,14 +1,18 @@
 index.html.erb
+<p><%= link_to 'Home Page', root_path %></p>
 
-<%= link_to 'Admin Index', '/admin' %>
-<%= link_to 'Create new image', new_image_path %>
+<p><%= link_to 'Admin Index', '/admin' %></p>
+<p><%= link_to 'Create new image', new_image_path %></p>
 
 <% @images.each do |image| %>
 <ul>
 	<li><%= image.name %></li>
+	<li>Selected: <%= image.selected? %></li>
 	<li><%= link_to 'Show', image %></li>
 	<li><%= link_to 'Edit', edit_image_path(image) %></li>
 	<li><%= link_to 'Destroy', image, method: :delete, data: {confirm: 'Delete for realz?'} %></li>
 	<!-- <li><%#= image_tag image.screen_cap.url %></li> -->
 </ul>
 <%end%>
+<p><%= link_to 'Home Page', root_path %></p>
+
