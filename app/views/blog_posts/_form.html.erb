@@ -12,6 +12,10 @@ _form.html.erb
 	<p><%= form.label :date %></p>
 	<p><%= form.date_field :date %></p>
 </div>
+<div class="field">
+	<%= form.label :selected %>
+	<%= form.check_box :selected %>
+</div>
 <div>
 	<p><%= form.submit %></p>
 </div>
