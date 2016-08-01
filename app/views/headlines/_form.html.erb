@@ -1,0 +1,14 @@
+_form.html.erb
+<%= form_for @headline do |form| %>
+<div class="field">
+	<%= form.label :text %>
+	<%= form.text_field :text %>
+</div>
+<div class="field">
+	<%= form.label :selected %>
+	<%= form.check_box :selected %>
+</div>
+<div>
+	<%= form.submit %>
+</div>
+<% end %>

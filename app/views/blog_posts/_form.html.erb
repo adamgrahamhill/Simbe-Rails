@@ -1,0 +1,18 @@
+_form.html.erb
+<%= form_for @post do |form| %>
+<div class="field">
+	<p><%= form.label :title %></p>
+	<p><%= form.text_field :title %></p>
+</div>
+<div class="field">
+	<p><%= form.label :content %></p>
+	<p><%= form.text_area :content %></p>
+</div>
+<div class="field">
+	<p><%= form.label :date %></p>
+	<p><%= form.date_field :date %></p>
+</div>
+<div>
+	<p><%= form.submit %></p>
+</div>
+<% end %>

@@ -19,6 +19,11 @@ class ImagesController < ApplicationController
 		end
 	end
 	def update
+		if @image.update(image_params)
+			redirect_to @image, notice: 'Update successful'
+		else
+			render :edit
+		end
 	end
 	def destroy
 		@image = Image.find(params[:id])

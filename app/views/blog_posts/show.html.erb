@@ -1,0 +1,8 @@
+show.html.erb
+<%= link_to 'Back', blog_posts_path %>
+<ul>
+	<li><%= @post.title %></li>
+	<li><%= @post.content %></li>
+	<li><%= @post.date %></li>
+	<li><%= link_to 'Edit', edit_blog_post_path(@post) %></li>
+</ul>

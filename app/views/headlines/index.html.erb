@@ -1,0 +1,17 @@
+index.html.erb
+<p><%= link_to 'Admin Index', '/admin' %></p>
+<p><%= link_to 'Create a headline', new_headline_path %></p>
+<% @headlines.each do |headline| %>
+<p><%= "-" * 50 %></p>
+<p><%= headline.text %></p>
+<p><%= headline.created_at %></p>
+<p>selected:
+<%= link_to "#{!headline.selected.nil?}", edit_headline_path(headline) %>
+</p>
+<p><%= link_to 'Show', headline %></p>
+<p><%= link_to 'Destroy', headline, method: :delete, data: {confirm: 'Delete for realz?'} %></p>
+<p><%= "-" * 50 %></p>
+
+<% end %>
+
+<%#= button_to headline ,'headlines#select' %>

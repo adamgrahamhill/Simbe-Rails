@@ -1,2 +1,160 @@
-<h2>Hi</h2> 
-<%= notice %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style_simbe.css" rel="stylesheet" type="text/css" />
+  <title>Definitely The Real Simbe</title>
+</head>
+<body>
+
+  <nav id="top-nav">
+    <div id="simbe-logo">
+      <img src="https://www.etsy.com/images/emoji/1f331.png"/>
+      <p>SIMBE</p>
+    </div>
+    <ul>
+      <li id="selected"><button>Home</button></li>
+      <li><button>Tour</button></li>
+      <li><button>Pricing</button></li>
+      <li><button>About</button></li>
+      <li><button>Contact</button></li>
+    </ul>
+    <button id="nav-button-1" type="button">Sign Up</button>
+    <button id="nav-button-2" type="button">Login</button>
+  </nav>
+
+  <div class="greypart">
+    <div id="top-outer">
+      <h1>Video coaching to improve student achievement</h1>
+      <p>
+        Simbe is a private video collaboration and developement tool designed to </p>
+        <p>
+          take you and everyone around you to the next level.
+        </p>
+        <div>
+          <button id="try-it" type="button">Try it Free</buttton>
+            <button id="tour" type="button">Product Tour</buttton>
+            </div>
+          </div>
+          <img id="macbook" src="http://www.davidlai.me/wp-content/uploads/2011/09/6a01310fb8e76f970c01310fbda40f970c.png" alt="Laptop"/>
+        </div>
+
+        <div class="mid-outer">
+          <h1>How does SIMBE improve schools?</h1>
+          <p>
+            SIMBE allows teachers, administrators, and school leaders to dicuss, share and access instructional best pracitces as they happen in the classroom.
+          </p>
+          <div id="mid-inner">
+            <div class="mid-inner-inner">
+              <img src="<%= asset_path('Screen Shot 2016-07-24 at 9.58.54 PM.png') %>"/>
+              <p>Observe</p>
+              <p>See every classroom at your<br> leisure</p>
+            </div>
+            <div class="mid-inner-inner">
+              <img src="<%= asset_path('Screen Shot 2016-07-24 at 9.59.32 PM.png') %>"/>
+              <p>Evaluate & develope</p>
+              <p>Find and grow those rock
+                <br>star teachers</p>
+              </div>
+              <div class="mid-inner-inner">
+                  <img src="<%= asset_path('Screen Shot 2016-07-24 at 9.58.54 PM.png') %>"/>
+                <p>Collaborate</p>
+                <p>Simbe keeps teams, depart-<br>ments, and schools <br>working and growing together.</p>
+              </div>
+              <div class="mid-inner-inner">
+                <%= image_tag("Screen Shot 2016-07-24 at 9.59.32 PM.png") %>
+                <p>Academic gain</p>
+                <p>Better teachers = increased student achievement</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="bottom-outer">
+            <div id="bottom-outer-one">
+              <div>
+                <h3>Recent Blog Posts</h3>
+                <p>
+                  Definitely a real Blog Post<br>
+                  Nov 19 1985
+                </p>
+                <p>
+                  This one is real also<br>
+                  June 15th 2020
+                </p>
+                <p>
+                  This one is questionable<br>
+                  May 32 1602
+                </p>
+              </div>
+              <a href="#">Follow the Simbe Blog</a>
+            </div>
+            <div id="bottom-outer-two">
+              <div>
+                <h3>What People Are Saying</h3>
+                <p>
+                  Some fake lorem ipsum text right here yolo<br> yolo free range sneakers<br>
+                  Some fake lorem ipsum text right here yolo<br> yolo free range sneakers
+                  <br>
+                  <span>Adam Hill</span> of Wyncode
+                </p>
+                <p>
+                  Some fake lorem ipsum text right here amigo<br> evaluate my function <br>
+                  Some fake lorem ipsum text right here yolo<br> I love you everything burrito
+                  <br>
+                  <span>Adam Hill</span> of Earth
+                </p>
+              </div>
+            </div>
+            <div id="bottom-outer-three">
+              <div>
+                <div id="bot-inner-right">
+                  <h3>Favorite Tweets</h3>
+                  <button type="button">
+                    Follow @Simbe
+                  </button>
+                </div>
+                <div class="bo3-inner">
+                  <img src="https://at-cdn-s01.audiotool.com/2014/01/13/albums/DyHLrN/cover256x256-b8c9b6d0-c466-45c5-a207-c22afd67b070.jpg"/>
+                  <div class="tweets">
+                    <p>Love and hearts</p>
+                    <p>Assignment <a href='#'>@hrts</a></p>
+                    <p>expand</p>
+                  </div>
+                </div>
+                <div class="bo3-inner">
+                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDPVHtLXKhoWg34VDyknfDHbHT04Qws4tmKAFnHdLiaSxsnfGU"/>
+                  <div class="tweets">
+                    <p>On Beauty</p>
+                    <p>Zadie <a href='#'>@Zmith</a></p>
+                    <p>expand</p>
+                  </div>
+                </div>
+                <div class="bo3-inner">
+                  <img src="http://www.indiepixfilms.com/image/235959"/>
+                  <div class="tweets">
+                    <p> 17 Books</p>
+                    <p>Anis Mojgani<a href='#'>@mojgani</a></p>
+                    <p>expand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <nav>
+              <ul id="footer-nav-ul">
+                <li><button>Home</button></li>
+                <li><button>Tour</button></li>
+                <li><button>Pricing</button></li>
+                <li><button>About</button></li>
+                <li><button>Contact</button></li>
+              </ul>
+            </nav>
+            <div class="footer-buttons">
+              <button type="button" name="twitter">Follow Us</button>
+              <button type="button" name="fb">Follow Us</button>
+            </div>
+            <p>All rights reserved 2012 SIMBE</p>
+          </footer>
+        </body>
+        </html>

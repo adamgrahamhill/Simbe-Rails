@@ -1,0 +1,9 @@
+index.html.erb
+
+<h4><%= link_to 'Admin Index', '/admin' %></h4>
+<p><%= link_to 'Create Post', new_blog_post_path %></p>
+<p><% @posts.each do |post| %></p>
+<p><%= post.title %></p>
+<p><%= post.date %></p>
+<%= link_to 'show', post %>
+<% end %>

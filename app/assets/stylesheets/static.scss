@@ -1,3 +1,272 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+/* General //////////////////////////////*/
+/* General //////////////////////////////*/
+
+#top-nav, footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#top-nav ul, #footer-nav-ul{
+  list-style-type: none;
+  display: flex;
+}
+
+#top-nav ul li button, #footer-nav-ul li button {
+  text-transform: uppercase;
+  color: grey;
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 25px;
+  font-weight: bolder;
+
+}
+#top-nav ul li button:hover, #footer-nav-ul li button:hover  {
+  background-color: lightgrey;
+  border-radius: 25px;
+}
+#top-nav button, #footer-nav-ul button {
+  border: none;
+  width: 8em;
+  height: 3em;
+}
+
+#simbe-logo {
+  display: flex;
+  justify-content:flex-end;
+  align-content: center;
+  width:10em;
+  font-size: 200%;
+  color: #2C556F;
+}
+#top-outer h1 {
+  font-size: 260%;
+  margin-bottom: 1rem;
+}
+#simbe-logo img {
+  max-width: 2em;
+  max-height: 2em;
+}
+#nav-button-1 {
+  background-color: #4D99DA;
+  margin-right: 1px;
+  margin-left: 5em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: bolder;
+  color: white;
+}
+#nav-button-2 {
+  background-color: #ED6348;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bolder;
+  color: white;
+
+}
+/*TOP NAV //////////////////////////*/
+/*TOP NAV //////////////////////////*/
+/*TOP NAV //////////////////////////*/
+/*TOP NAV //////////////////////////*/
+.greypart {
+  display: flex;
+  flex-direction: column;
+  background-image: url(http://img04.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
+  background-size:cover;
+  justify-content: center;
+  align-items: center;
+}
+#macbook {
+  max-width: 80%;
+  position: relative;
+  bottom: -6em;
+  margin: -5em 0em;
+}
+#top-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#top-outer h1{
+  margin-top: 1.5em;
+}
+#top-outer div {
+  margin-top: 1.5em;
+}
+button#try-it {
+  color: white;
+  background-color: #ED6348;
+  margin-right: 20px;
+  border-radius: 4px;
+  font-weight: bolder;
+  border: none;
+  width: 15em;
+  height: 4em;
+
+}
+button#tour {
+  color: white;
+  background-color: #4D99DA ;
+  border-radius: 4px;
+  font-weight: bolder;
+  border: none;
+  width: 15em;
+  height: 4em;
+}
+#top-outer > p {
+  margin: 0.1em;
+  font-size: 130%;
+}
+/*Grey and White Macbook Zone//////////////////////*/
+/*Grey and White Macbook //////////////////////*/
+/*Grey and White Macbook //////////////////////*/
+/*Grey and White Macbook Zone//////////////////////*/
+.mid-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+}
+#mid-inner {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.mid-inner-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 250px;
+  text-align: center;
+  border: none;
+  transition-property: border;
+  transition-duration: 0.5s;
+}
+.mid-inner-inner:hover {
+  border: 1px solid lightgrey;
+}
+.mid-inner-inner p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10em;
+}
+
+/*Middle Simbe Imrovement///////*/
+/*Middle Simbe Imrovement///////*/
+/*Middle Simbe Imrovement///////*/
+/*Middle Simbe Imrovement///////*/
+#bottom-outer {
+  margin-top: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-top: solid 1px lightgrey;
+  background-color: #fbfbfb;
+}
+#bottom-outer-one {
+  padding-right: 3em;
+  margin-right: 2em;
+  /*display: flex;
+  flex-direction: column;*/
+}
+#bottom-outer-one ul {
+  list-style-type: none;
+  text-align: left;
+}
+#bottom-outer-one a {
+  color: #ED7963;
+}
+
+#bottom-outer-two {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  text-align: center;
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+  padding:0px 10px;
+  font-style: italic;
+}
+#bottom-outer-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bo3-inner {
+display: flex;
+align-items: center;
+text-align: left;
+justify-content: flex-start;
+padding-left: 2em;
+}
+.bo3-inner img {
+  max-width: 60px;
+  max-height: auto;
+  margin: 1em;
+}
+.bo3-inner p {
+  margin: 5px;
+}
+#bot-inner-right {
+  display: flex;
+  align-items: baseline;
+}
+#bot-inner-right button {
+  height: 1.8em;
+  width: 10em;
+  border-radius: 3px;
+  border-style:inset;
+  border-width: thin;
+  color: black;
+  background-color: #F7F7F7;
+}
+#bot-inner-right h3 {
+  margin: 0em 2em;
+}
+/* Bottom Social Media Sectin ////*/
+/* Bottom Social Media Sectin ////*/
+/* Bottom Social Media Sectin ////*/
+footer {
+  display: flex;
+  flex-direction: column;
+  color:grey;
+}
+
+.footer-buttons {
+  display: flex;
+}
+.footer-buttons button {
+  width: 9em;
+  height: 2.7em;
+  border-radius: 3px;
+  border-style: none;
+}
+.footer-buttons button:first-child {
+  background-color: #00ACEE;
+  color: #fff;
+  margin-right: 10px;
+}
+.footer-buttons button:nth-child(2) {
+  background-color: #3B59B6;
+  color: #fff;
+}
+/*footer stuff ///////////////*/
+/*footer stuff ///////////////*/
+/*footer stuff ///////////////*/
+/*footer stuff ///////////////*/

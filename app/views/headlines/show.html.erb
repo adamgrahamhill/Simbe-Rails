@@ -1,0 +1,7 @@
+show.html.erb
+<p><%= notice %></p>
+<p><%= link_to 'Back', headlines_path %></p>
+
+<p><%= @headline.text %></p>
+<p><%=	link_to 'Edit', edit_headline_path(@headline) %></p>
+<p> <%= link_to 'Destroy', @headline, method: :delete, data: {confirm: 'Delete for realz?'} %></p>
